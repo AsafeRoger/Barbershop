@@ -1,0 +1,182 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 16px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Estilo do ícone do menu hambúrguer */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Menu - Modificação: menu fica fixo no topo, sem a necessidade de deslizamento */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  position: fixed;  /* Fixando o menu no topo */
+  top: 0;  /* Fica na parte superior da tela */
+  left: 0;
+  width: 100%;
+  height: 100vh;  /* O menu ocupa toda a altura da tela */
+  z-index: 999;
+  transform: translateX(0);  /* Não há mais o deslizamento */
+  display: none;  /* Inicialmente o menu fica oculto */
+}
+
+/* Estilo do menu quando ele estiver aberto */
+.menu.open {
+  display: flex;  /* Exibe o menu quando a classe 'open' for adicionada */
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.menu ul li {
+  margin: 7px 0;
+}
+
+.menu ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+/* Responsividade: menu aparece apenas em telas pequenas */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;  /* Exibe o ícone do menu */
+  }
+}
+
+/* Configurações para esconder o menu em telas maiores */
+@media (min-width: 769px) {
+  .menu {
+    display: none;  /* O menu não será exibido em telas grandes */
+  }
+}
+.servicos{
+
+    width: 100%;
+    height: auto;
+    background-color: #5f5d5d;
+    padding: 15px;
+    font-size: large;
+
+  }
+  .servicos span{
+
+    color: #ffffff;
+
+  }
+ .lista-servisos{
+  padding: 15px;
+  
+ }
+ .lista-servisos span{
+  color: #ffffff;
+  
+ }
+.apresentação-b{
+    width: 100%;
+    height: auto;
+    background-color: #5f5d5d;
+    padding: 15px;
+    font-size: large;
+
+}
+
+.apresentação-b span{
+  color: #ffffff;
+}
+.Lista-Barbeiros{
+  padding: 15px;
+}
+.Lista-Barbeiros span{
+  color: #ffffff;
+}
+
+body{
+  background-color: #333;
+  min-height: 100vh;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.apresentação-G{
+  width: 100%;
+  height: auto;
+  background-color: #5f5d5d;
+  padding: 15px;
+  font-size: large;
+
+}
+.apresentação-G span{
+  color: #ffffff;
+}
+.Lista-Clientes{
+  padding: 15px;
+}
+.Lista-Clientes span{
+  color: #ffffff;
+}
+.agendamento{
+  width: 100%;
+  height: auto;
+  background-color: #5f5d5d;
+  padding: 15px;
+  font-size: large;
+}
+
+.apresentação-H{
+  width: 100%;
+  height: auto;
+  background-color: #5f5d5d;
+  padding: 15px;
+  font-size: large;
+}
+.corpo{
+  padding: 15px;
+}
+
+.login{
+ width: 100%;
+  height: auto;
+  background-color: #5f5d5d;
+  padding: 15px;
+  font-size: large;
+}
+
+.logo{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  height: auto;
+}
